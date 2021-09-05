@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1,maximum-scale=1" name="viewport"/><link charset='utf-8' href='https://raw.githack.com/gurubaru/balitranslate/main/balii.css' rel='stylesheet' type='text/css'/>
+ <script charset='utf-8' src='https://raw.githack.com/gurubaru/balitranslate/main/jquerytrans.js' type='text/javascript'></script>
+<script charset='utf-8' language='javascript' src='https://raw.githack.com/gurubaru/balitranslate/main/trans-bali.js' type='text/javascript'></script>
+ <script charset='utf-8' language='javascript' src='https://raw.githack.com/gurubaru/balitranslate/main/scripttrans.js' type='text/javascript'></script>
+<script language='javascript' src='https://raw.githack.com/gurubaru/balitranslate/main/latin2bali.js' type='text/javascript'></script></head>
+<body style="width:100%; height:400px;">
+<div id="container" onload="document.getElementById('inp_txt').focus();">
+              <div id="bd" role="main">
+               <table style="display: none; font-family: Arial; width: 100%;"><tbody><tr><td style="width: 15%;">
+                    <input name="mode" type="radio" value="ketik" />e = pepet<abbr title="Dalam mode ini, Anda bisa mengetik secara normal. Tombol 'e' digunakan untuk menuliskan taling, sementara tombol 'x' digunakan untuk menuliskan pepet"><span style="font-family: bali jelih std;">)</span></abbr><br />
+                    <input checked="checked" name="mode" type="radio" value="kopas" />'è'/'é' = taleng <abbr title="Dalam mode ini, Anda bisa kopipas dari artikel yang menggunakan huruf 'e' beraksen (è/é), misalnya dari artikel Wikipedia bahasa Jawa"><span style="font-family: bali jelih std;">e</span></abbr>
+                  </td><td style="width: 10%;">
+                  </td><td style="width: 10%;">
+                    <input checked="checked" name="spasi" type="radio" value="without" />Tanpa spasi <abbr title="Dalam mode ini, teks akan diperlakukan tanpa ada spasi sama sekali, meskipun Anda menggunakan spasi. Teks tidak dapat dikonvert kembali dengan spasi."></abbr><br />
+                    <input name="murda" type="radio" value="pakai" />Mode Murda<br />
+                  </td>
+                </tr></tbody></table>
+                <div class="gb">
+                  <textarea class="tb" id="inp_txt" placeholder="ketik huruf latin disini"></textarea>
+				</div>
+                  <div class="gb" id="transdiv">
+                    <p><abbr title="Teks yang Anda ketik/kopipas akan muncul pratayangnya di sini."></abbr></p>
+<button class="js-textareacopybtn">Salin Makejang</button>
+                    <textarea class="js-copytextarea" id="prev_label" readonly="" placeholder="ᬅᬓ᭄ᬱᬭᬩᬮᬶ᭟  muncul disini"></textarea>                
+                </div>
+             </div>
+              </div>
+<!--tombol copy-->
+<script type='text/javascript'>
+  var copyTextareaBtn = document.querySelector('.js-textareacopybtn');
+  copyTextareaBtn.addEventListener('click', function(event) {
+    var copyTextarea = document.querySelector('.js-copytextarea');
+    copyTextarea.select();
+    try {
+      var successful = document.execCommand('copy');
+      var msg = successful ? 'successful' : 'unsuccessful';
+      console.log('Copying text command was ' + msg);
+    } catch (err) {
+      console.log('Oops, unable to copy');
+    }
+  });</script>
+</body></html>
