@@ -41,4 +41,6 @@
       console.log('Oops, unable to copy');
     }
   });</script>
+<div><a href="https://aksara-bali.blogspot.com">Uger-Uger Nyurat Aksara Bali</a></div>
+<div><a href="https://tutlenc.blogspot.com/2021/03/Translate-latin-ke-aksara-bali.html.html">Pedoman penggunaan Aplikasi ini</a></div>
 </body></html>
