@@ -3,7 +3,7 @@ $("document").ready(function(){
   $(".tab-slider--body:first").show();
 });
 
-$(".tab-slider--nav li").click(function() {
+$(".tab-slider--nav label").click(function() {
   $(".tab-slider--body").hide();
   var activeTab = $(this).attr("rel");
   $("#"+activeTab).fadeIn();
@@ -12,6 +12,6 @@ $(".tab-slider--nav li").click(function() {
 	}else{
 		$('.tab-slider--tabs').removeClass('slide');
 	}
-  $(".tab-slider--nav li").removeClass("active");
+  $(".tab-slider--nav label").removeClass("active");
   $(this).addClass("active");
 });
