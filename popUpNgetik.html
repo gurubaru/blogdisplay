@@ -32,5 +32,12 @@
                   </div>				
                 <script type="text/javascript" src="https://raw.githack.com/gurubaru/ngetikAB/main/script.js" charset="utf-8"></script>
                    <!--end keyboard-->
+                       <button style="background-color: rgba(231, 228, 228, 0.712);border: none;position: absolute;top: 280px;margin-left: 5px;padding: 0px;z-index: 1;" onclick="copy();"><i class="far fa-copy"></i> copy to clipboard</button>
+                       <script>
+					function copy(){
+						document.getElementById("textarea1").select();
+						document.execCommand("copy");
+					}
+				    </script>
 </body>
 </html>
