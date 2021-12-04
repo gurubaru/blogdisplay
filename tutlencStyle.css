@@ -31,6 +31,9 @@
 .tomolMnekTuun input[type=radio]:checked + label + .tomolMnekTuun-content {max-height: 100vh;visibility: visible;opacity: 1;overflow-y:scroll;}
 .tomolMnekTuun input[type=radio]:checked + label + .tomolMnekTuun-content * {opacity: 1;}
 /* Multiple Related Post baca juga */
-.MultiRelated {background-color:transparent;border-left:4px solid $(link.colors); margin:10px 0;
+.MultiRelated {background-color:#ccc;border-left:4px solid $(link.colors); margin:10px 0;
 display:flex; flex-wrap:nowrap; justify-content:space-between; transition:all .3s ease}
 .MultiRelated .content {padding:.5rem .75rem;}
+
+h2 {position: relative;background: linear-gradient(90deg, #fd2306, rgb(8, 42, 235), #000, #f7f306);background-repeat: repeat;background-size: 70%;animation: animate 5s infinite;-webkit-background-clip: text;-webkit-text-fill-color: rgba(255, 255, 255, 0);}
+      @keyframes animate {0% {background-position: -100%;}100% {background-position: 100%;}}
