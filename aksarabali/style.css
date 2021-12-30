@@ -7,7 +7,7 @@
 
 .quiztitle,
 .subquiztitle {
-  font-family: Montserrat, sans-serif,natya;
+  font-family: Montserrat, sans-serif;
   font-weight: normal;
 }
 
@@ -16,7 +16,6 @@
 }
 
 .quizcontainer {
-	padding:2em 2em;
   font-family: "Open Sans", sans-serif, natya;
   /* mocking native UI */
   cursor: default !important;
@@ -76,7 +75,6 @@
 .questionBox .quiztitlequizcontainer {
   text-align: center;
   margin: 0 auto;
-  padding: 1.5rem;
 }
 .questionBox .quizForm {
   display: block;
