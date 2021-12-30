@@ -17,8 +17,6 @@
 
 .quizcontainer {
 	padding:2em 2em;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
   font-family: "Open Sans", sans-serif, natya;
   /* mocking native UI */
   cursor: default !important;
@@ -36,8 +34,6 @@
 }
 
 .questionBox {
-  max-width: 30rem;
-  width: 25rem;
   min-height: 30rem;
   background: #FAFAFA;
   position: relative;
